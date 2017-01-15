@@ -1,0 +1,23 @@
+/* Site Colors:
+  #1A446C - blue grey
+  #689DC1 - light blue
+  #D4E6F4 - very light blue
+  #EEE4B9 - light tan
+  #8D0D19 - burgundy
+*/
+
+html { height: 100%;  }
+#auto{
+		max-width:100px;
+		position: relative;
+		max-height:250px;
+		overflow:scroll;
+		z-index:1000px;
+	}
+.error{
+	color:red;
+}
+
+#emphasis{
+	font-size:20px;
+}

@@ -1,0 +1,1234 @@
+/*@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');*/
+
+html{
+  background-color: #eaf0f2;
+}
+header{margin-bottom: 10px;}
+body{
+  font:14px/1.5 Arial, Helvetica, sans-serif;
+  padding:0;
+  margin:0;
+
+}
+a{
+				color: #006699;
+				text-decoration:none !important;
+				
+				
+			}
+.ng-cloak, .x-ng-cloak {
+display: none !important; }
+.success {
+color: green;
+} .unsuccess {
+color: red; }
+ul.mp li.inactive,
+           ul.mp li.inactive:hover{
+                background-color:#ededed;
+                color:#bababa;
+                border:1px solid #bababa;
+                cursor: default;
+            }
+
+           ul.mp li{
+                list-style: none;
+                float: left;
+                border: 1px solid #006699;
+                padding: 2px 6px 2px 6px;
+                margin: 0 3px 0 3px;
+                font-family: arial;
+                font-size: 14px;
+                
+                font-weight: bold;
+                background-color: #f2f2f2;
+            }
+            ul.mp li:hover,ul.mp li a:hover{
+                color: #fff !important;
+                background-color: #006699;
+                cursor: pointer;
+            }
+			ul.mp li a{
+				color: #006699;
+				text-decoration:none;
+			}
+			
+ .onlineMarker_pulse {
+    border: 10px solid rgb(127, 185, 0);
+    background: transparent;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -khtml-border-radius: 40px;
+    border-radius: 40px;
+    height: 40px;
+    width: 40px;
+    -webkit-animation: pulse 3s ease-out infinite;
+    -moz-animation: pulse 3s ease-out infinite;
+    animation: pulse 3s ease-out infinite;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    z-index: 1;
+    opacity: 0;
+}
+
+.menu{
+  text-align: center;
+  padding-top: 25px;
+  margin-bottom:200px;
+}
+
+.menu img{
+  opacity: 0.4;
+  margin: 20px auto;
+}
+
+.menu h1{
+  margin-top:0;
+  font: normal 32px/1.5 'Open Sans', sans-serif;
+  color: #3F71AE;
+  padding-bottom: 16px;
+}
+
+.menu h2{
+  color: #F05283;
+}
+
+.menu h2 a{
+  color:inherit;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #F05283;
+  padding: 10px 15px;
+  border-radius: 3px;
+  font: bold 14px/1 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+.menu h2 a:hover{
+  background-color:#F05283;
+  transition:0.2s;
+  color:#fff;
+}
+
+.menu ul {
+  max-width: 600px;
+  margin: 60px auto 0;
+}
+
+.menu ul a{
+  text-decoration: none;
+  color: #FFF;
+  text-align: left;
+  background-color: #B9C1CA;
+  padding: 10px 16px;
+  border-radius: 2px;
+  opacity: 0.8;
+  font-size: 16px;
+  display: inline-block;
+  margin: 4px;
+  line-height: 1;
+  outline: none;
+
+  transition: 0.2s ease;
+}
+
+.menu ul li a.active{
+  background-color: #66B650;
+  pointer-events: none;
+}
+
+.menu ul li a:hover {
+  opacity: 1;
+}
+
+.menu ul{
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li{
+  display: inline-block;
+}
+
+@media (max-height:800px){
+  .menu { padding-top:40px; }
+}
+
+.header-user-dropdown {
+  background-color:#129277;
+  box-shadow:0 1px 1px #ccc;
+  padding: 20px 40px;
+  height: 80px;
+  color: #ffffff;
+  box-sizing: border-box;
+
+}
+
+.ess {color:red;
+	font-size:16px;
+}
+
+.header-user-dropdown .header-limiter {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+#con {padding-left: 15px;}
+/*nav styles*/
+
+#con tr td {
+	
+	position: relative;
+	overflow: hidden;
+}
+#con tr td a {
+	
+	display: block; 
+
+	cursor: pointer; /*since the links are dummy without href values*/
+	/*prevent text selection*/
+	user-select: none;
+	/*static positioned elements appear behind absolutely positioned siblings(.ink in this case) hence we will make the links relatively positioned to bring them above .ink*/
+	position: relative;
+}
+
+/*.ink styles - the elements which will create the ripple effect. The size and position of these elements will be set by the JS code. Initially these elements will be scaled down to 0% and later animated to large fading circles on user click.*/
+.ink {
+	display: block; position: absolute;
+	background: hsl(209, 50%, 57%);
+	border-radius: 100%;
+	transform: scale(0);
+}
+/*animation effect*/
+.ink.animate {animation: ripple 0.65s linear;}
+@keyframes ripple {
+	/*scale the element to 250% to safely cover the entire link and fade it out*/
+	100% {opacity: 0; transform: scale(2.5);}
+}
+/* Logo */
+
+.header-user-dropdown .header-limiter h1{
+  float: left;
+  font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+  line-height: 40px;
+  margin:0;
+}
+
+.header-user-dropdown .header-limiter h1 span {
+  color: #bc40df;
+}
+
+/* The header links */
+
+.header-user-dropdown .header-limiter a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-user-dropdown .header-limiter nav{
+  font:16px Arial, Helvetica, sans-serif;
+  line-height: 40px;
+  float: left;
+  margin: 0 0 0 60px;
+  padding: 0;
+}
+
+.header-user-dropdown .header-limiter nav a{
+  font-size: 14px;
+  display: inline-block;
+  padding: 0 12px;
+  opacity: 0.9;
+  position: relative;
+  text-decoration:none;
+  line-height: 1;
+}
+
+.header-user-dropdown .header-limiter nav a:hover {
+  opacity: 1;
+}
+
+/* The "new" badge */
+
+.header-user-dropdown .header-limiter nav a span {
+  position: absolute;
+  top: -12px;
+  border-radius: 2px;
+  background-color: #2A6A92;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  height: 13px;
+  font-size: 11px;
+  right: -15px;
+  padding: 1px 4px 0;
+}
+
+/* The user menu */
+
+.header-user-dropdown .header-limiter .header-user-menu{
+  position: relative;
+  float:right;
+  background-color:#3a3c3e;
+  width:75px;
+  height:40px;
+  border-radius:2px;
+}
+
+.header-user-dropdown .header-limiter .header-user-menu:before{
+  content:'';
+  width:0;
+  height:0;
+  top: 18px;
+  left: 15px;
+  position:absolute;
+  border:5px solid transparent;
+  border-top-color:#fff;
+}
+
+.header-user-dropdown .header-limiter .header-user-menu ul{
+  display: none;
+  font:bold 13px Arial, Helvetica, sans-serif;
+  background-color: inherit;
+  list-style: none;
+  position: absolute;
+  text-align: center;
+  width: 125px;
+  top: 25px;
+  right: 0;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.header-user-dropdown .header-user-menu:active ul,
+.header-user-dropdown .header-user-menu:hover ul,
+.header-user-dropdown .header-user-menu.show ul{
+  display:block;
+}
+
+.header-user-dropdown .header-user-menu ul li{
+  padding:5px;
+}
+
+.header-user-dropdown .header-user-menu ul li a:hover{
+  opacity:0.9;
+}
+
+.header-user-dropdown .header-user-menu ul li a.highlight,.highlight{
+  color:#e9ac09;
+}
+
+.header-user-dropdown .header-user-menu img{
+  border-radius:50%;
+  position:absolute;
+  top:6px;
+  max-width: 28px;
+  right:10px;
+}
+
+
+@media all and (max-width: 800px) {
+
+  .header-user-dropdown .header-limiter h1 {
+    font-size: 24px;
+  }
+
+  .header-user-dropdown .header-limiter nav a {
+    padding: 0 5px;
+  }
+
+  .header-user-dropdown .header-limiter nav {
+    margin-left: 20px;
+  }
+
+}
+
+@media all and (max-width: 600px) {
+
+  .header-user-dropdown .header-limiter nav {
+    display: none;
+  }
+  aside{display: none;}
+
+}
+
+@media all and (max-width: 1000px) {
+
+  aside{display: none;}
+  body{padding-left: 0px !important;}
+
+}
+
+
+
+.header-limiter ul.ls {
+  font: 14px Arial, Helvetica, sans-serif;
+  list-style: none;
+  line-height: 1;
+  float: right;
+}
+
+.header-limiter ul.ls li {
+  display: inline-block;
+  margin-left: 15px;
+  opacity:0.9;
+}
+ .header-limiter ul.ls li:hover{
+  opacity: 1;
+}
+
+/* The sign up button */
+
+.header-limiter ul.ls li:last-child a {
+  font-weight: bold;
+  background-color: #3a3c3e;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+.form-mini-container{
+	margin-top:12%;
+	margin-bottom:11%;
+	
+}
+
+/*
+
+a.loginbtn {
+  font-size: 13px;
+  font-weight: bold;
+  float: right;
+  border-radius: 3px;
+  background-color: rgba(58, 60, 62, 0);
+  height: 40px;
+  padding: 0 20px;
+  border: 1px solid #5E6367;
+  line-height: 40px;
+  box-sizing: border-box;
+}Making the header responsive */
+.side-menu-advanced{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    box-sizing: border-box;
+    background-color:  #222427;
+    box-shadow: 2px 0 5px 0 rgba(29, 30, 31, 0.4);
+    z-index: 10;
+
+
+    color: #ffffff;
+    font: bold 16px Arial, Helvetica, sans-serif;
+
+    -webkit-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+
+    -webkit-transform: translateX(-350px);
+    transform:translateX(-350px);
+}
+
+.side-menu-advanced.side-menu-shown{
+    -webkit-transform: translateX(0);
+    transform:translateX(0);
+}
+
+/* Scrollable container for the side menu options */
+
+.side-menu-advanced .side-menu-content{
+  /*  overflow: auto;*/
+    max-height: 100%;
+    padding: 20px 32px 20px;
+}
+
+/* Titles */
+
+.side-menu-advanced .side-menu-section-title {
+    display: block;
+    color: #74839a;
+    font-size: 11px;
+    margin: 0 0 25px;
+}
+
+/* Profile section */
+
+.side-menu-user-profile-section{
+    margin-bottom: 38px;
+    overflow: hidden;
+}
+
+.side-menu-user-profile-section img{
+    display: block;
+    float: left;
+    border-radius: 50%;
+    margin-right: 11px;
+    border:3px solid #FFF;box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);border-radius: 100%;position: relative;
+}
+
+.side-menu-user-profile-section a{
+    display: block;
+    margin-top: 8px;
+    text-decoration: none;
+    color: #fefefe;
+    font-size: 14px;
+}
+
+.side-menu-user-profile-section span{
+    color:  #74839a;
+    font-size: 11px;
+}
+
+/* Account limits section */
+
+.side-menu-account-limits-section{
+    margin-bottom: 45px;
+}
+
+.side-menu-account-limits{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.side-menu-account-limits span{
+    float: right;
+}
+
+.side-menu-progress-bar{
+    height: 4px;
+    background-color: #383c43;
+    margin: 9px 0 17px;
+}
+
+.side-menu-progress-bar span{
+    height: 4px;
+    display: block;
+    background-color:  #39b54a;
+}
+
+.side-menu-button{
+    box-sizing: border-box;
+    display: block;
+    color: inherit;
+    font: inherit;
+    font-size: 13px;
+    text-decoration: none;
+
+    width: 150px;
+    background-color:  #345e7e;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    padding: 10px 22px;
+    margin-top: 28px;
+}
+
+
+/* Actions section */
+
+.side-menu-actions-section{
+    margin-bottom: 120px;
+}
+
+.side-menu-actions-section .side-menu-row{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.side-menu-actions-section .side-menu-row a{
+    text-decoration: none;
+    color: inherit;
+    max-width: 150px;
+    float: left;
+}
+
+.side-menu-actions-section .side-menu-row i{
+    float: right;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* The logo */
+
+.side-menu-advanced .side-menu-logo{
+    display: block;
+
+    color: inherit;
+    text-decoration: none;
+    font: normal 50px 'Cookie', cursive;
+    line-height: 122px;
+    text-align: center;
+    width: 122px;
+    border-radius: 50%;
+    background-color: #151617;
+    margin:0 auto;
+}
+
+
+/* Close button */
+
+.side-menu-advanced .side-menu-close{
+    position: absolute;
+    right: -52px;
+    top: 15px;
+    width: 35px;
+
+    display: none;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background-color:  #ed145b;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.side-menu-advanced.side-menu-shown .side-menu-close{
+    display: block;
+}
+
+/* Making the side menu adapt to the screen size */
+
+@media (max-width: 400px){
+
+    .side-menu-advanced{
+        width: 260px;
+    }
+
+    .side-menu-advanced .side-menu-close{
+        right: -45px;
+    }
+}
+
+@media (max-height: 840px){
+    .side-menu-advanced .side-menu-logo{
+        display: none;
+    }
+}
+.footer-distributed{
+  background-color: #129277;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  
+  text-align: left;
+  font: bold 16px sans-serif;
+
+  padding: 55px 50px;
+  margin-top: 80px;
+  margin-left: -15px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer{
+  width: 100%;
+}
+.footer-right{
+float:right;
+margin-left: 100%;
+margin-top: -8%;}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+ .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  #5383d3;
+  text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+	
+  }
+
+}
+@media (max-width: 880px) {
+.footer-right{
+	position:relative;
+	margin-top:0%;
+}
+
+}
+.form-validation,.container{
+    box-sizing: border-box;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1px;
+	padding-bottom:2%;
+    background-color:  #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+    font: bold 14px sans-serif;
+    text-align: center;
+}
+
+.form-row{
+    position: relative;
+    text-align: left;
+    margin-bottom: 23px;
+}
+
+.form-title-row, .container-title{
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.form-validation h1,.container-title h1{
+    display: inline-block;
+    box-sizing: border-box;
+    color:  #4c565e;
+    font-size: 24px;
+    padding: 15px 8px;
+    border-bottom: 2px solid #6caee0;
+    margin:0;
+}
+.form-validation h2{
+	box-sizing: border-box;
+    color:  #4c565e;
+    font-size: 18px;
+    padding: 15px 8px;
+    border-bottom: 2px solid #6caee0;
+    margin:0;
+	}
+
+.form-validation .form-row > label span{
+    display: inline-block;
+    box-sizing: border-box;
+    color:  #5f5f5f;
+    width: 180px;
+    text-align: right;
+    padding: 8px 25px;
+}
+
+.form-validation input{
+    position: relative;
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 18px;
+    border: 1px solid #dbdbdb;
+}
+
+
+/* Styles for Valid input data */
+
+.form-validation .form-valid-data-sign{
+    position: absolute;
+    color: #ffffff;
+    line-height: 24px;
+    text-align: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color:  #a2cf78;
+    left: 440px;
+    top: 10px;
+
+}
+
+/* Styles for Invalid input data */
+
+.form-validation .form-invalid-data{
+    margin-bottom: 55px;
+}
+
+.form-validation .form-invalid-data input, .form-validation textarea{
+    border: 1px solid #d37171;
+    box-shadow: 2px 3px 4px 0 rgba(200, 77, 77, 0.15);
+}
+
+
+.form-validation .form-invalid-data-sign{
+    position: absolute;
+
+    color: #ffffff;
+    line-height: 23px;
+    font-size: 14px;
+    text-align: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #e17c4f;
+    left: 440px;
+    top: 10px;
+}
+
+.form-validation .form-invalid-data-info{
+    position: absolute;
+    color: #c84d4d;
+    font-weight: normal;
+    bottom: -30px;
+    left: 183px;
+}
+
+.form-invalid-data .form-invalid-data-sign,
+.form-invalid-data .form-invalid-data-info{
+    display: block;
+}
+
+.form-valid-data .form-valid-data-sign{
+    display: block;
+}
+
+
+
+.form-validation .form-checkbox input{
+    width:auto;
+}
+
+.form-validation button{
+   margin: 30px 18px 0;
+
+}
+.form-validation button,.container button{
+display: block;
+    border-radius: 2px;
+    background-color:  #6caee0;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+      padding: 14px 22px;
+border: 0;
+
+}
+.form-validation .form-radio-buttons {
+    display: inline-block;
+    vertical-align: top;
+}
+.form-validation .form-radio-buttons label span {
+    margin-left: 8px;
+    color: #5f5f5f;
+    font-weight: normal;
+}
+
+.container h1{
+    box-sizing: border-box;
+    color: #4c565e;
+    font-size: 24px;
+    padding: 15px 20px;
+    border-bottom: 2px solid #6caee0;
+}
+.form-validation a.warn,.container a.warn,.form-validation button.warn,.container button.warn{
+    color: #ffffff;
+    display: block;
+    width: 145px;
+    height: 40px;
+    font-size: 12px;
+    background-color: rgba(222, 110, 60, 0.9);
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    margin: 8px auto;
+    text-decoration: none;
+    text-align: center;
+}
+.form-validation a.warn,.container a.warn{
+    line-height: 40px;
+}
+.form-validation a.btn,.container a.btn{
+    color: #ffffff;
+    display: block;
+    width: 145px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    background-color: rgba(75, 136, 194, 0.9);
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    margin: 8px auto;
+    text-decoration: none;
+    text-align: center;
+}
+
+input[type="radio"], .form-validation input[type="checkbox"] {
+    box-shadow: none;
+    width: auto;
+}
+/* Placeholder color */
+
+.form-validation ::-webkit-input-placeholder {
+    color:  #999;
+}
+
+.form-validation ::-moz-placeholder {
+    color:  #999;
+    opacity: 1;
+}
+
+.form-validation :-ms-input-placeholder {
+    color:  #999;
+    opacity: 1;
+}
+
+/*  Making the form responsive. Remove this media query
+    if you don't need the form to work on mobile devices. */
+
+@media (max-width: 700px) {
+
+    .form-validation{
+        margin-top: 0;
+        padding: 30px;
+        max-width: 480px;
+    }
+
+    .form-validation .form-row{
+        max-width: 300px;
+        margin: 25px auto;
+        text-align: left;
+    }
+
+    .form-validation .form-title-row, .container-title{
+        margin-bottom: 50px;
+    }
+
+    .form-validation h1{
+        padding: 0 0 15px 0;
+    }
+
+    .form-validation .form-row > label span{
+        display: block;
+        text-align: left;
+        padding: 0 0 15px;
+    }
+
+    .form-validation input,
+    .form-validation select{
+        width: 220px;
+    }
+
+    .form-validation .form-valid-data-sign,
+    .form-validation .form-invalid-data-sign{
+        left: 235px;
+        top: 40px;
+    }
+
+    .form-validation .form-invalid-data{
+        margin-bottom: 55px;
+    }
+
+    .form-validation .form-invalid-data-info{
+        left: 0;
+    }
+
+    .form-validation .form-checkbox span{
+        display: inline-block !important;
+        width: 100px !important;
+    }
+
+    .form-validation button{
+        margin: 0;
+    }
+	.footer-right{
+		margin-left:100%;
+	}
+
+}
+.form-validation textarea{
+    color: #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+    height: 80px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    font: normal 13px sans-serif;
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+    resize: vertical;
+}
+.form-validation select {
+    background-color: #ffffff;
+    color: #5f5f5f;
+    box-sizing: border-box;
+    max-width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 18px;
+    border: 1px solid #dbdbdb;
+}
+.form-validation input {
+    position: relative;
+    color: #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 18px;
+    border: 1px solid #dbdbdb;
+}
+
+.form-validation table,.container table {
+  margin: 1em 0;
+  min-width: 300px;
+  align: center;
+}
+.form-validation table tr,.container table tr{
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.form-validation table th,.container table th {
+  display: none;
+}
+.form-validation table td,.container table td {
+  display: block;
+}
+.form-validation table td:first-child,.container table td:first-child {
+  padding-top: .5em;
+}
+.form-validation table td:last-child,.container table td:last-child {
+  padding-bottom: .5em;
+}
+.form-validation table td:before,.container table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  .form-validation table td:before, .container table td:before {
+    display: none;
+  }
+  .footer-right{
+		margin-left:10%;
+	}
+}
+.form-validation table td,.form-validation table th,.container table th, .container table td {
+  text-align: left;
+}
+@media (min-width: 480px) {
+ .form-validation table th,.form-validation table td,.container table th, .container table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+.form-validation table th:first-child,.form-validation table td:first-child,.container table th:first-child, .container table td:first-child {
+    padding-left: 0;
+  }
+  .form-validation table td:last-child,.form-validation table th:last-child,.container table th:last-child, .container table td:last-child {
+    padding-right: 0;
+  }
+}
+
+
+
+.container table,.form-validation table {
+
+  border-radius: .4em;
+  overflow: hidden;
+}
+.container table tr ,.form-validation table tr{
+  border-color: #46637f;
+}
+.container table th, .container table td ,.form-validation table td,.form-validation table td{
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+.container table th, .container table td,.form-validation table th,.form-validation table td {
+    padding: 1em !important;
+  }
+}
+
+.container table ,.form-validation table {
+    border-collapse: collapse;
+    border: 1px solid #e9e9e9;
+    margin-bottom: 2em;
+    box-shadow: 0 1px 1px #fefefe;
+}
+.container table tr, .form-validation table tr{
+    background-color: #fff;
+    font-size: 0.9em;
+}
+.container table tr:nth-child(2n+1) td,.form-validation table tr:nth-child(2n+1) td{
+    background-color: #fbfbfb;
+}
+.container table td, .container table th , .form-validation table td,.form-validation table tr{
+    padding: 12px 16px;
+    border: 1px solid #f0f0f0;
+    text-align: left;
+}
+.container table tr , .form-validation table tr{
+    background-color: #fff;
+    font-size: 0.9em;
+}
+.container table th , .form-validation table th{
+    text-align: center !important;
+    font-size: 0.8em;
+    background-color: #777;
+    color: #fff;
+    padding: 10px 30px;
+    border: 1px solid #858585;
+}
+input[type="text"], select, textarea {
+    box-shadow: none;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+#CP_hourcont {
+padding: 0px;
+position:absolute;
+border:1px dashed #999999;
+background-color:#f2f2f2;
+}
+
+#CP_minutecont {
+padding: 1px;
+position:absolute;
+background-color:#dddddd;
+width:45px;
+}
+
+.floatleft {
+float:left;
+}
+
+.CP_hour {
+padding:3px;
+font-family: Arial, Helvetica, sans-serif;
+font-size:10px;
+white-space:nowrap;
+cursor:pointer;
+width:35px;
+}
+
+.CP_minute {
+padding:2px;
+background-color:#dddddd;
+font-family: Arial, Helvetica, sans-serif;
+font-size:9px;
+white-space:nowrap;
+cursor:pointer;
+width:auto;
+}
+
+.CP_over {
+background-color:#FFFFFF;
+}
